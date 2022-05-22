@@ -12,4 +12,5 @@ public class ApplicationDbContext : IdentityDbContext
     }
     public DbSet<Plan_zajec.Models.Lesson>? Lesson { get; set; }
     public DbSet<Plan_zajec.Models.Group>? Group { get; set; }
+    public DbSet<Plan_zajec.Models.Lecturer>? Lecturer { get; set; }
 }

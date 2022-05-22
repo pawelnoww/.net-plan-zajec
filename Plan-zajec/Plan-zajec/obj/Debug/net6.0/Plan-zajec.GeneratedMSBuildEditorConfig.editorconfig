@@ -47,6 +47,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Pawel/Documents/GitHub/.net-plan-zajec/Plan-zajec/Plan-zajec/Views/Lecturer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pawel/Documents/GitHub/.net-plan-zajec/Plan-zajec/Plan-zajec/Views/Lecturer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pawel/Documents/GitHub/.net-plan-zajec/Plan-zajec/Plan-zajec/Views/Lecturer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pawel/Documents/GitHub/.net-plan-zajec/Plan-zajec/Plan-zajec/Views/Lecturer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pawel/Documents/GitHub/.net-plan-zajec/Plan-zajec/Plan-zajec/Views/Lecturer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Pawel/Documents/GitHub/.net-plan-zajec/Plan-zajec/Plan-zajec/Views/Lesson/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVzc29uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
