@@ -4,4 +4,35 @@
 
 <div class="text-center">
     <h1 class="display-4">Siemaszko ;-)</h1>
+    
+    @{ string[] weekdays = new string[] { "Monday", "Wednesday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday" }; }
+    @foreach (var weekday in weekdays)
+    {
+        <h3>@weekday</h3>
+        
+        <table class="table">
+            <thead>
+            <tr>
+                <th width="60%">Subject</th>
+                <th width="20%">Lecturer</th>
+                <th width="20%">Time</th>
+            </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tbody>
+                    @if (@item.StartTime.DayOfWeek.ToString() == weekday)
+                    {
+                        <tr>
+                            <td width="60%">@item.Name</td>
+                            <td width="20%">@item.LecturerID</td>
+                            <td width="20%">@item.StartTime.ToString("HH:mm") - @item.EndTime.ToString("HH:mm")</td>
+                        </tr>
+                    }
+                </tbody>
+
+            }
+        </table>
+    }
+
 </div>

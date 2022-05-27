@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Plan_zajec.Data;
 using Plan_zajec.Models;
 
 namespace Plan_zajec.Controllers;
@@ -7,15 +9,18 @@ namespace Plan_zajec.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly ApplicationDbContext _context;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ApplicationDbContext context, ILogger<HomeController> logger)
     {
         _logger = logger;
+        _context = context;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
-        return View();
+        var items = await _context.Lesson.Where(l => l.GroupID == 1).ToListAsync();
+        return View(items);
     }
 
     public IActionResult Privacy()
