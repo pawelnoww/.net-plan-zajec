@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
     var groups = (List<Group>)ViewData["groups"];
+    var lecturers = (List<Lecturer>)ViewData["lecturers"];
 }
 
 <script>
@@ -22,7 +23,7 @@
         <button onclick="changeGroup(@group.ID)">@group.Name</button>
     }
 
-    @{ string[] weekdays = new string[] { "Monday", "Wednesday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday" }; }
+    @{ string[] weekdays = new string[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" }; }
     @foreach (var weekday in weekdays)
     {
         <h3>@weekday</h3>
@@ -42,7 +43,7 @@
                 {
                     <tr>
                         <td width="60%">@item.Name</td>
-                        <td width="20%">@item.LecturerID</td>
+                        <td width="20%">@lecturers[@item.LecturerID].Title @lecturers[@item.LecturerID].FirstName @lecturers[@item.LecturerID].SecondName</td>
                         <td width="20%">@item.StartTime.ToString("HH:mm") - @item.EndTime.ToString("HH:mm")</td>
                     </tr>
                 }

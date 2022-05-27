@@ -33,8 +33,9 @@ public class HomeController : Controller
         }
         
         var items = await _context.Lesson.Where(l => l.GroupID == group_id).ToListAsync();
-
+        var lecturers = await _context.Lecturer.ToListAsync();
         ViewData["groups"] = groups;
+        ViewData["lecturers"] = lecturers;
         return View(items);
     }
 
