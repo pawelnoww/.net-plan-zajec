@@ -15,13 +15,27 @@
 
 </script>
 
-<div class="text-center">
-    <h1 class="display-4">Siemaszko ;-)</h1>
-    
-    @foreach (var group in groups)
-    {
-        <button onclick="changeGroup(@group.ID)">@group.Name</button>
+<style>
+    .group-selector:hover{
+        background-color: white;
     }
+    
+    .groups{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Plan zajęć</h1>
+    
+    <div class="groups">
+        @foreach (var group in groups)
+             {
+                 <button class="group-selector" onclick="changeGroup(@group.ID)">@group.Name</button>
+             }
+    </div>
+    
 
     @{ string[] weekdays = new string[] { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" }; }
     @foreach (var weekday in weekdays)
