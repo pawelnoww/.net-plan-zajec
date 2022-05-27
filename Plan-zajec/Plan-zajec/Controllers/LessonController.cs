@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Plan_zajec.Data;
 using Plan_zajec.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Plan_zajec.Controllers
 {
@@ -20,6 +21,7 @@ namespace Plan_zajec.Controllers
         }
 
         // GET: Lesson
+        [Authorize]
         public async Task<IActionResult> Index()
         {
               return _context.Lesson != null ? 
@@ -28,6 +30,7 @@ namespace Plan_zajec.Controllers
         }
 
         // GET: Lesson/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Lesson == null)
@@ -46,6 +49,7 @@ namespace Plan_zajec.Controllers
         }
 
         // GET: Lesson/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -68,6 +72,7 @@ namespace Plan_zajec.Controllers
         }
 
         // GET: Lesson/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Lesson == null)
@@ -88,6 +93,7 @@ namespace Plan_zajec.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("ID,GroupID,Name,LecturerID,StartTime,EndTime")] Lesson lesson)
         {
             if (id != lesson.ID)
@@ -119,6 +125,7 @@ namespace Plan_zajec.Controllers
         }
 
         // GET: Lesson/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Lesson == null)
@@ -139,6 +146,7 @@ namespace Plan_zajec.Controllers
         // POST: Lesson/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             if (_context.Lesson == null)
