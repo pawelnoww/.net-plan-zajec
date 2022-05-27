@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Admin Panel";
+}
+
+<style>
+    .manage-panel{
+        margin-top: 125px;
+    }
+    
+    .turbo-guzik{
+        width: 400px;
+        font-size: 25pt;
+        border: 2px solid gray;
+    }
+    
+    .turbo-guzik:hover{
+        background-color: white;
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Admin panel :-)!</h1>
+    
+    <div class="manage-panel">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Lecturer" asp-action="Index">
+            <button class="turbo-guzik">Manage lecturers</button>
+        </a>
+    
+            
+    
+        <a class="nav-link text-dark" asp-area="" asp-controller="Group" asp-action="Index">
+            <button class="turbo-guzik">Manage groups</button>
+        </a>
+    
+            
+    
+        <a class="nav-link text-dark" asp-area="" asp-controller="Lesson" asp-action="Index">
+            <button class="turbo-guzik">Manage lessons</button>
+        </a>
+    </div>
+
+
+</div>
