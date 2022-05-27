@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Plan_zajec.Data;
 using Plan_zajec.Models;
@@ -19,7 +20,21 @@ public class HomeController : Controller
 
     public async Task<IActionResult> Index()
     {
-        var items = await _context.Lesson.Where(l => l.GroupID == 1).ToListAsync();
+
+        var groups = await _context.Group.ToListAsync();
+        var group_id = new int();
+        if (String.IsNullOrEmpty(HttpContext.Request.Query["group_id"]))
+        {
+            group_id = groups[0].ID;
+        }
+        else
+        {
+            group_id = Int32.Parse(HttpContext.Request.Query["group_id"]);
+        }
+        
+        var items = await _context.Lesson.Where(l => l.GroupID == group_id).ToListAsync();
+
+        ViewData["groups"] = groups;
         return View(items);
     }
 

@@ -1,9 +1,32 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var groups = (List<Group>)ViewData["groups"];
 }
+
+<script>
+    function changeGroup() {
+        console.log("XD XDDDDD");
+        var select = document.getElementById("group_selector");
+        var id = select.value;
+        console.log(id);
+        var getUrl = window.location;
+        var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+        window.location.href = baseUrl + "?group=" + id;
+    }
+    
+    //var select = document.getElementById("group_selector");
+    //select.addEventListener("change", changeGroup);
+</script>
 
 <div class="text-center">
     <h1 class="display-4">Siemaszko ;-)</h1>
+    
+    <select id="group_selector" onchange="changeGroup()">
+        @foreach (var group in groups)
+        {
+            <option value=@group.ID>@group.Name</option>
+        }
+    </select>
     
     @{ string[] weekdays = new string[] { "Monday", "Wednesday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday" }; }
     @foreach (var weekday in weekdays)
@@ -21,14 +44,14 @@
             @foreach (var item in Model)
             {
                 <tbody>
-                    @if (@item.StartTime.DayOfWeek.ToString() == weekday)
-                    {
-                        <tr>
-                            <td width="60%">@item.Name</td>
-                            <td width="20%">@item.LecturerID</td>
-                            <td width="20%">@item.StartTime.ToString("HH:mm") - @item.EndTime.ToString("HH:mm")</td>
-                        </tr>
-                    }
+                @if (@item.StartTime.DayOfWeek.ToString() == weekday)
+                {
+                    <tr>
+                        <td width="60%">@item.Name</td>
+                        <td width="20%">@item.LecturerID</td>
+                        <td width="20%">@item.StartTime.ToString("HH:mm") - @item.EndTime.ToString("HH:mm")</td>
+                    </tr>
+                }
                 </tbody>
 
             }
