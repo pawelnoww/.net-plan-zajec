@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.22)  30 MAY 2022 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.22)  3 JUN 2022 13:08
 entering extended mode
-**./template_Article.tex
-(template_Article.tex
+**./dokumentacja.tex
+(dokumentacja.tex
 LaTeX2e <2020-10-01> patch level 1
 L3 programming layer <2020-10-05> xparse <2020-03-03>
 (C:\Users\Pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -246,8 +246,8 @@ tex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count270
 \l__pdf_internal_box=\box51
-) (template_Article.aux)
-\openout1 = `template_Article.aux'.
+) (dokumentacja.aux)
+\openout1 = `dokumentacja.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -349,7 +349,7 @@ LaTeX Font Info:    External font `plex10' loaded for size
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <6> on input line 29.
 
-(template_Article.toc
+(dokumentacja.toc
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <10> on input line 2.
 LaTeX Font Info:    External font `plex10' loaded for size
@@ -358,7 +358,7 @@ LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <5> on input line 2.
 )
 \tf@toc=\write3
-\openout3 = `template_Article.toc'.
+\openout3 = `dokumentacja.toc'.
 
  [1
 
@@ -366,8 +366,7 @@ LaTeX Font Info:    External font `plex10' loaded for size
 {C:/Users/Pawel/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 4
 9.
-
-(C:\Users\Pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+ (C:\Users\Pawel\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
@@ -424,27 +423,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-[7 <./figures//lecturers-create.png>] (template_Article.aux) ) 
+[7 <./figures//lecturers-create.png>] (dokumentacja.aux) ) 
 Here is how much of TeX's memory you used:
  5626 strings out of 480236
- 86730 string characters out of 2880557
- 519583 words of memory out of 3000000
+ 86674 string characters out of 2880557
+ 519575 words of memory out of 3000000
  22130 multiletter control sequences out of 15000+200000
  545066 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,70p,508b,1330s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Pawel/A
-ppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc} <C:\Users\Pawel\AppDa
-ta\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk>{C:/Users/Pawel/
-AppData/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}<C:/Users/Pawel/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Pa
-wel/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx10.pfb><C:/Users/Pa
-wel/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/Pa
-wel/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/Pa
-wel/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/Paw
-el/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/Pawe
-l/AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb>
-Output written on template_Article.pdf (7 pages, 188911 bytes).
+ 60i,8n,70p,504b,1330s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Pawel/AppDa
+ta/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plmi.enc} <C:\Users\Pawel\AppData\L
+ocal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk>{C:/Users/Pawel/AppD
+ata/Local/Programs/MiKTeX/fonts/enc/dvips/pl/plrm.enc}<C:/Users/Pawel/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Pawel/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx10.pfb><C:/Users/Pawel/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plbx12.pfb><C:/Users/Pawel/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plmi10.pfb><C:/Users/Pawel/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr10.pfb><C:/Users/Pawel/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr12.pfb><C:/Users/Pawel/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/pl/plr17.pfb>
+Output written on dokumentacja.pdf (7 pages, 188930 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
